@@ -1,43 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Javascript Basics</title>	
+    <meta charset="UTF-8">
+    <title>HTML+CSS</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Hello World</h1>
-	<img src="Google.png" alt="Google">
-	<button>Change User</button>
-	
-	<script>
-		var myImage=document.querySelector('img');
-		myImage.onclick=function(){
-			var mySrc=myImage.getAttribute('src');
-			if(mySrc==='Google.png'){
-				myImage.setAttribute('src','01.jpg');
-			}
-			else{
-				myImage.setAttribute('src','Google.png');
-			}
-		}
-		
-		var myButton=document.querySelector('button');
-		var myHeading = document.querySelector('h1');
-		
-		function setUserName(){
-			var myName=prompt('Please enter your name.');
-			localStorage.setItem('name',myName);
-			myHeading.innerHTML = 'Mozilla is cool, ' + myName;
-		}		
-		if(!localStorage.getItem('name')){
-			setUserName();
-		}else{
-			var storedName=localStorage.getItem('name');
-			myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-		}
-		myButton.onclick=function(){
-			setUserName();
-		}
-	</script>
+    <div class="header">
+        <div class="top">
+            <div class="wp">
+                <div class="z">
+                    <span>
+                        <a href="|">主页</a>
+                    </span>
+                    <span>
+                        <a href="|">收藏本店</a>
+                    </span>
+                </div>
+                <div class="y">
+                    <span>2016/3/3</span>
+                    <span class="mr_0">天气: 25度</span>
+                </div>
+            </div>
+        </div>
+        <div class="wp">
+            <div class="logos">
+                <div class="logo z">
+                    <h1><a href="index.html"><img src="images/logo.jpg" alt="logo"></a></h1>
+                </div>
+                <div class="dianhua y">
+                    <span>客服热线： 200-3435-7777</span>
+                </div>
+                <div class="sousuo y">
+                    <form action="index.html" method="get">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="s_z z"></td>
+                                <td class="s_c z">
+                                    <input type="text" name="text" id="s_c_txt">
+                                </td>
+                                <td class="s_y z">
+                                    <button type="submit" name="submit"></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>        
+            </div>
+        </div>
+        <div class="nav">
+            <div class="wp">
+                <ul>
+                    <li class="a">
+                        <a href="index.html">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="index.html">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="index.html">业务描述</a>
+                    </li>
+                    <li>
+                        <a href="index.html">服务范围</a>
+                    </li>
+                    <li>
+                        <a href="index.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="index.html">人才管理</a>
+                    </li>
+                     <li>
+                        <a href="index.html">在线留言</a>
+                    </li>
+                    <li>
+                        <a href="index.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+       <div class="wp">
+            <div class="ad">
+                <img src="images/ad.jpg" alt="">
+            </div>      
+            <div class="jianjie z">
+                <div class="tit">
+                    <img src="images/jianjie.jpg" alt="">
+                    <span><a href="">More</a></span>
+                </div>
+                <div class="jj_c">
+                    <img src="images/jianjie_img.jpg" alt="">
+                    <p>2015WEB前端学习简介-（零基础必看）01：2014html+css基础部分第01课：代码初识、盒模型详解第02课：标签、选择符、超链接及SEO第03课：标签类型转换、样式重置第04课：浮动原理</p>
+                    <p>2015WEB前端学习简介-（零基础必看）01：2014html+css基础部分第01课：代码初识、盒模型详解第02课：标签、选择符、超链接及SEO第03课：标签类型转换、样式重置第04课：浮动原理 </p>
+                    <p>2015WEB前端学习简介-（零基础必看）01：2014html+css基础部分第01课：代码初识、盒模型详解第02课：标签、选择符、超链接及SEO第03课：标签类型转换、样式重置第04课：浮动原理 </p>
+                </div>
+            </div>
+            <div class="xinwen z">
+                <div class="tit">
+                    <img src="images/xinwen.jpg" alt="">
+                    <span><a href="">More</a></span>
+                </div>
+                <div class="xw_c">
+                    <ul>
+                        <li class="a"><a href="">                             
+                                <img src="images/list_img.jpg" alt="">                               
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <p>2015WEB前端学习简介-（零基础必看）01：2014html+css基础部分第01 </p>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                                <h3>Web前端开发之HTML+CSS</h3>
+                                <span>2016-3-3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chanping z">
+                <div class="tit">
+                    <img src="images/chanpin.jpg" alt="">
+                    <span><a href="">More</a></span>
+                </div>
+                <div class="cp_c">
+                    <ul>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li class="mr_0"><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                        <li class="mr_0"><a href=""><img src="images/chanpin_img.jpg" alt=""><span>前端开发</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl"></div>
+    <div class="footer">
+        <div class="wp">
+            <div class="footer_top">
+                <span class="z"><a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">加入我们</a> | <a href="">给我留言</a></span>
+                <span class="y">@2016 学院版权所有</span>
+            </div>
+            <div class="footer_bottom">
+                <p>
+                    友情链接：<a href="http://www.maiziedu.com" target="_blank">麦子学院</a>
+                </p>
+            </div>
+        </div>       
+    </div>
 </body>
 </html>
